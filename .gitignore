@@ -1,3 +1,7 @@
+*.js
+.DS_Store
+*.log
+*.iml
 .idea
 typings/**
 node_modules

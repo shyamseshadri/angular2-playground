@@ -1,0 +1,6 @@
+<div class="product-item" (click)="onSelect(product)"
+     [class.soldout]="product.isSoldOut">
+  <h3>{{product.name}}</h3>
+  <div>{{product.price | currency:'INR':true:'1.2-2'}}</div>
+</div>
+
