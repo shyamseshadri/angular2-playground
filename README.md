@@ -152,3 +152,6 @@ Shut it down manually with Ctrl-C.
 
 [travis-badge]: https://travis-ci.org/angular/quickstart.svg?branch=master
 [travis-badge-url]: https://travis-ci.org/angular/quickstart
+=======
+# angular2-playground
+For testing purposes
