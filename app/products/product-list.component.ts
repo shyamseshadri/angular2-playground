@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 import { Product } from './product';
 import { ProductService } from './product.service';
 
@@ -13,6 +13,7 @@ import { ProductService } from './product.service';
 })
 export class ProductListComponent implements OnInit {
 
+  @HostBinding('class') classes = 'row';
   products: Product[];
   selectedProduct: Product;
 
