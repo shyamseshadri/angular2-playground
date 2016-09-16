@@ -5,10 +5,12 @@ import { ProductService } from './product.service';
 @Component({
     selector: 'product-list',
     template: `
-      <product-list-item *ngFor="let product of products"
-                         [product]="product"
-                         (whenProductSelect)="onProductSelect($event)"
-                         ></product-list-item>
+      <div class="row">
+        <product-list-item *ngFor="let product of products"
+                           [product]="product"
+                           (whenProductSelect)="onProductSelect($event)"
+                           ></product-list-item>
+      </div>
     `
 })
 export class ProductListComponent implements OnInit {

@@ -10,7 +10,8 @@ h2, h3 {
   font-weight: lighter;
 }
 body {
-  margin: 2em;
+  margin: 1em;
+  min-width: 480px;
 }
 body, input[text], button {
   color: #888;
@@ -37,9 +38,29 @@ button:disabled {
   color: #aaa;
   cursor: auto;
 }
-
-.product-item.soldout {
-    background-color: grey;
+product-list {
+  display: block;
+}
+.product-item-wrapper img {
+  width: 100%;
+}
+.product-item-wrapper {
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.product-item {
+  margin-bottom: 10px;
+}
+.product-item h3 {
+  background: #90E1FC;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 20px;
+}
+.product-item .soldout  h3 {
+  background-color: FF8080;
 }
 
 /* Navigation link styles */
@@ -61,7 +82,9 @@ nav a:hover {
 nav a.router-link-active {
   color: #039be5;
 }
-
+.nav.nav-pills {
+  margin-bottom: 10px;
+}
 /* items class */
 .items {
   margin: 0 0 2em 0;
