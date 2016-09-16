@@ -1,19 +1,20 @@
-import { Component, OnInit, HostBinding } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Product } from './product';
 import { ProductService } from './product.service';
 
 @Component({
     selector: 'product-list',
     template: `
-      <product-list-item *ngFor="let product of products"
-                         [product]="product"
-                         (whenProductSelect)="onProductSelect($event)"
-                         ></product-list-item>
+      <div class="row">
+        <product-list-item *ngFor="let product of products"
+                           [product]="product"
+                           (whenProductSelect)="onProductSelect($event)"
+                           ></product-list-item>
+      </div>
     `
 })
 export class ProductListComponent implements OnInit {
 
-  @HostBinding('class') classes = 'row';
   products: Product[];
   selectedProduct: Product;
 

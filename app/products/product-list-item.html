@@ -3,7 +3,7 @@
        (click)="onSelect(product)"
        [class.soldout]="product.isSoldOut">
     <h3>{{product.name}}</h3>
-    <img src="{{product.imgUrl}}" alt="">
+    <img [src]="product.imgUrl" alt="">
     <div>{{product.price | currency:'INR':true:'1.2-2'}}</div>
   </div>
 </div>
