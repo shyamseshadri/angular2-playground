@@ -1,0 +1,9 @@
+<h1>My First Angular 2 App</h1>
+<div class="nav nav-pills">
+  <li [routerLinkActive]="['active']"><a routerLink="/products">Products</a></li>
+  <li [routerLinkActive]="['active']"><a routerLink="/login">Login</a></li>
+  <li [routerLinkActive]="['active']"><a routerLink="/register">Register</a></li>
+  <li [routerLinkActive]="['active']"><a routerLink="/cart">Cart</a></li>
+  <li [routerLinkActive]="['active']"><a routerLink="/slowcart">Slow Cart</a></li>
+</div>
+<router-outlet></router-outlet>

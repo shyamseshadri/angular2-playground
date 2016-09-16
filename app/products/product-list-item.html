@@ -1,6 +1,9 @@
-<div class="product-item" (click)="onSelect(product)"
-     [class.soldout]="product.isSoldOut">
-  <h3>{{product.name}}</h3>
-  <div>{{product.price | currency:'INR':true:'1.2-2'}}</div>
+<div class="product-item clearfix col-xs-6 col-sm-4 cold-md-3 clearfix">
+  <div class="product-item-wrapper"
+       (click)="onSelect(product)"
+       [class.soldout]="product.isSoldOut">
+    <h3>{{product.name}}</h3>
+    <img [src]="product.imgUrl" alt="">
+    <div>{{product.price | currency:'INR':true:'1.2-2'}}</div>
+  </div>
 </div>
-
